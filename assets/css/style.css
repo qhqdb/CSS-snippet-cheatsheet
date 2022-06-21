@@ -1,33 +1,21 @@
-* {
-    box-sizing: border-box;
-  }
 
-user-select: none;
-user-select: text;
-user-select: all;
+:root {
+  --primary-bkg: gray;
+  --primary-txt-color: purple;
+}
 
 body {
-  font-family: Arial;
   margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: var(--primary-bkg);
 }
   
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  color: var(--primary-txt-color);
 }
 
-  /* 
-  What happens when we set the display property to flex? 
-  TODO: Write your answer here: We allow the nav item to use flexbox. All items in the box gain flex properties
-  */
-
-  
-  /* 
-  What is the flex-wrap property? 
-  TODO: Write your answer here: allows flex-teims to wrap to the next slide
-  */
   main {
     display: flex;
     flex-wrap: wrap;
