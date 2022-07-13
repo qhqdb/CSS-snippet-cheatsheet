@@ -1,3 +1,4 @@
+
 /* color scheme sourced from http://khroma.co/generator/ */
 :root {
     --outer-space: #33393f;
@@ -205,6 +206,93 @@
     .card-column {
       flex: 0 0 33.333%;
       max-width: 33.333%;
+=======
+
+:root {
+  --primary-bkg: gray;
+  --primary-txt-color: purple;
+}
+
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: var(--primary-bkg);
+}
+  
+header {
+  padding: 40px;
+  text-align: center;
+  color: var(--primary-txt-color);
+}
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  /* 
+  What does the justify-content property do? 
+  TODO: Write your answer here: aligns flex items to center horizontally
+  */
+  .products {
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* 
+  What is the flex property a shorthand property for?
+  What is it doing here? 
+  TODO: Write your answer here : grow shrink basis
+  */
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+  }
+  
+  .card header {
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  /* 
+  What does the flex-direction property define?
+  What is it doing here?  specifies how items stack, when its less than 768px (medium size tablet), 
+  TODO: Write your answer here 
+  */
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+
     }
   }
   
